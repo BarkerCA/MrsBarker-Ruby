@@ -6,7 +6,7 @@ gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.5'
+gem 'sass-rails', '~> 4.0.3'
 gem 'compass-rails'
 gem 'foundation-rails'
 gem 'haml'
@@ -32,10 +32,10 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-#gem 'rails_12factor', group: :production
+gem 'rails_12factor', group: :production
 
 # Use unicorn as the app server
-#gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
