@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Child:</strong>
+  <%= @journal.child_id %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @journal.day %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @journal.subject %>
+</p>
+
+<p>
+  <strong>Memo:</strong>
+  <%= @journal.memo %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @journal.date %>
+</p>
+
+<%= link_to 'Edit', edit_journal_path(@journal) %> |
+<%= link_to 'Back', journals_path %>

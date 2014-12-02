@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  child_id: 1
+  day: MyString
+  subject: MyString
+  memo: MyText
+  date: 2014-12-02
+
+two:
+  child_id: 1
+  day: MyString
+  subject: MyString
+  memo: MyText
+  date: 2014-12-02

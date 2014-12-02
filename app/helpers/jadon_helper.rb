@@ -1,0 +1,2 @@
+module JadonHelper
+end
