@@ -2,9 +2,8 @@ Rails.application.routes.draw do
   
   root 'home#index'
   
-  get 'student/:name'     => "children#student"
-  get 'resources' => "resources#index"
-  
+  get 'student/:name' => "children#student"
+  get 'resources'     => "resources#index"
 
   resources :journals
   resources :grades

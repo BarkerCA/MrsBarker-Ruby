@@ -1,0 +1,12 @@
+body.home{
+  $base_color: $orange;
+  
+  h2,h3,h4,h5,h6{
+    color: $base_color;
+  }
+  
+  #top_home{
+    background: $base_color;
+  }
+  
+}
