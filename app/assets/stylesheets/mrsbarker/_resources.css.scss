@@ -1,0 +1,13 @@
+body.resources{
+  $base_color: $purple;
+  
+  h2,h3,h4,h5,h6{
+    color: $base_color;
+  }
+  
+  #top_resources{
+    background: $base_color;
+  }
+  
+  
+}

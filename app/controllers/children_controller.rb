@@ -1,5 +1,6 @@
 class ChildrenController < ApplicationController
   before_action :set_child, only: [:show, :edit, :update, :destroy]
+  before_action :get_child, only: [:student]
 
   # GET /children
   # GET /children.json
@@ -15,6 +16,13 @@ class ChildrenController < ApplicationController
   # GET /children/new
   def new
     @child = Child.new
+  end
+  
+  # GET /student/name
+  # GET /student/name.json
+  def student
+    @page = {:title => "#{@child.fname} #{@child.lname}", :head_title => "#{@child.fname} Home"}
+    @birthday = @child.dob
   end
 
   # GET /children/1/edit
@@ -60,11 +68,19 @@ class ChildrenController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_child
       @child = Child.find(params[:id])
+    end
+    
+    # Use callbacks to share common setup or constraints between actions.
+    def get_child
+      fname = params[:name].capitalize
+      @child = Child.find_by(fname: fname )
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

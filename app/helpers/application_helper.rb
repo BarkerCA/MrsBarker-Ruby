@@ -2,7 +2,7 @@ module ApplicationHelper
   
   def longdate
     d = Date.parse(Time.now.to_date.to_s)
-    d.strftime('%A %B %d, %Y')
+    d.strftime('%A - %B %d, %Y')
   end
   
   def head_page_title
@@ -28,6 +28,14 @@ module ApplicationHelper
   def active(location)
     if params[:controller] + params[:action] == location
       return " class='active'"
+    end
+  end
+  
+  def student_class
+    if params[:controller] == "children" && params[:action] == "student"
+      return " #{params[:name].downcase}"
+    else
+      return ""
     end
   end
 

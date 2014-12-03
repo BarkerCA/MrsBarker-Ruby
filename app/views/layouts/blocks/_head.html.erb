@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Mrs. Barker</title>
+    <title>Mrs. Barker <%= head_page_title %></title>
     <meta name="description" content="Documentation and reference library for ZURB Foundation. JavaScript, CSS, components, grid and more."/>
     <meta name="author" content="ZURB, inc. ZURB network also includes zurb.com"/>
     <meta name="copyright" content="ZURB, inc. Copyright (c) 2014"/>
@@ -13,4 +13,4 @@
     <%= csrf_meta_tags %>
   </head>
 
-  <body class ="<%= controller.controller_name %>">
+  <body class ="<%= controller.controller_name %><%= student_class %>">

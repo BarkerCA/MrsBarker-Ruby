@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
-
+  
   root 'home#index'
+  
+  get 'student/:name'     => "children#student"
+  get 'resources' => "resources#index"
+  
 
   resources :journals
   resources :grades
   resources :children
   
-  get 'jadon'     => "jadon#index"
-  get 'natalie'   => "natalie#index"
-  get 'resources' => "resources#index"
+  
+  
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
