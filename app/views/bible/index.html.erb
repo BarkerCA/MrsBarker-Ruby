@@ -1,0 +1,17 @@
+<% if @doc == 'NONE' %>
+
+<form id="bible_search_form" method="get" action="/bible">
+  <label for=""><h3>Scripture Lookup</h3></label>
+  <input type="text" name="passage" />
+</form>
+<a id="bible_search" class="button">Search The Word!</a>
+<h4>Examples:</h4>
+<p>John 3:16 (One Verse),<br> John 3:16-17(Multiple Verses),<br> John 3 (Whole Chapter),<br> John 3-4 (Multiple Chapters)</p>
+
+<% else %>
+
+<%= raw @doc.css('.esv') %>
+<a class="button" href="/bible">Search Again</a>
+
+<% end %>
+
