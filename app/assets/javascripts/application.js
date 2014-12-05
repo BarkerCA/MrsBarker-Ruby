@@ -17,3 +17,5 @@
 //= require modernizr
 //= require foundation
 //= require reftagger
+//= require bible
+//= require resources

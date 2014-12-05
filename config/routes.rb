@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   
+  # Idea to make easy memory of URLs
+  get 'go/:loc' => 'resources#go'
+  
   root 'home#index'
   
-  get 'student/:name' => "children#student"
-  get 'resources'     => "resources#index"
+  get 'student/:name'       => "children#student"
+  get 'resources'           => "resources#index"
+  get 'bible/:passage'      => "bible#index"
+  get 'bible'               => "bible#index"
 
   resources :journals
   resources :grades
