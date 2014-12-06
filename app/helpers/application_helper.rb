@@ -1,5 +1,10 @@
 module ApplicationHelper
   
+  def bible_books
+    b = Bible.new
+    b.books
+  end
+  
   def longdate
     d = Date.parse(Time.now.to_date.to_s)
     d.strftime('%A - %B %d, %Y')

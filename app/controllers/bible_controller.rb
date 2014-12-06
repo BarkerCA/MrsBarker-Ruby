@@ -6,8 +6,8 @@ class BibleController < ApplicationController
     if params[:passage] == "" || params[:passage] == nil
       @doc = "NONE"
     else
-      bible = CAB::Bible.new
-      @doc = bible.passageQuery(params[:passage].gsub(' ', ''))
+      bible = Bible.new
+      @doc = bible.passageQuery(params[:passage])
     end
   end
   

@@ -14,68 +14,14 @@
       <li>
         <a href="/">Home</a>
       </li>
-      <li class="has-dropdown">
-        <a href="/bible">Bible</a>
-        <ul class="dropdown">
-          <li>
-            <a href="/bible">Search</a>
-          </li>
-          <li>
-            <a href="/bible/genesis">Genesis</a>
-          </li>
-          <li>
-            <a href="/bible/exodus">Exodus</a>
-          </li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <a href="#">Jadon</a>
-        <ul class="dropdown">
-          <li>
-            <a href="#">First link in dropdown</a>
-          </li>
-          <li class="active">
-            <a href="#">Active link in dropdown</a>
-          </li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <a href="#">Natalie</a>
-        <ul class="dropdown">
-          <li>
-            <a href="#">First link in dropdown</a>
-          </li>
-          <li class="active">
-            <a href="#">Active link in dropdown</a>
-          </li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-        <a href="#">Resources</a>
-        <ul class="dropdown">
-          <li>
-            <a href="#">First link in dropdown</a>
-          </li>
-          <li class="active">
-            <a href="#">Active link in dropdown</a>
-          </li>
-        </ul>
-      </li>
+	  <%= render "layouts/blocks/topbar/bible" %>
+	  <%= render "layouts/blocks/topbar/jadon" %>
+	  <%= render "layouts/blocks/topbar/natalie" %>
+ 	  <%= render "layouts/blocks/topbar/resources" %>
     </ul>
     <!-- Left Nav Section -->
     <ul class="left">
-      <li class="has-form">
-        <form id="top_bible_search_form" method="get" action="/bible">
-          <div class="row collapse">
-            <div class="large-8 small-9 columns">
-              <input style="height: 30px;" name="passage" type="text" placeholder="Search the Bible...">
-            </div>
-            <div class="large-4 small-3 columns">
-              <a id="top_bible_search" class="button expand">Bible</a>
-            </div>
-          </div>
-        </form>
-      </li>
+  	  <%= render "layouts/blocks/topbar/searchform" %>
     </ul>
   </section>
 </nav>

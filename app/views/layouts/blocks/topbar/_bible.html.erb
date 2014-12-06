@@ -1,0 +1,13 @@
+<li class="has-dropdown">
+	<a>Bible</a>
+	<ul class="dropdown">
+		<li>
+			<a href="/bible">Search</a>
+		</li>
+		<% bible_books.each do |book| %>
+		<li>
+			<a href="/bible/<%= book[1][0] %>"><%= book[1][0] %></a>
+		</li>
+		<% end %>
+	</ul>
+</li>
